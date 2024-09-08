@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes y Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Clientes y Mascotas</h1>
+        <div class="form-section">
+            <h2>Registrar Cliente</h2>
+            <form id="client-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Ingrese el nombre">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" placeholder="Ingrese el apellido">
+                <label for="rut">RUT:</label>
+                <input type="text" id="rut" placeholder="Ingrese el RUT">
+                <button type="submit">Registrar Cliente</button>
+            </form>
+        </div>
+
+        <div class="form-section">
+            <h2>Agregar Mascota</h2>
+            <form id="mascota-form">
+                <label for="rut-cliente">RUT Cliente:</label>
+                <input type="text" id="rut-cliente" placeholder="Ingrese el RUT del cliente">
+                <label for="nombre-mascota">Nombre de la Mascota:</label>
+                <input type="text" id="nombre-mascota" placeholder="Ingrese el nombre de la mascota">
+                <label for="tipo-mascota">Tipo de Mascota:</label>
+                <input type="text" id="tipo-mascota" placeholder="Ingrese el tipo de mascota">
+                <button type="submit">Agregar Mascota</button>
+            </form>
+        </div>
+
+        <div class="actions">
+            <button id="listar-clientes">Listar Clientes</button>
+            <button id="imprimir-historial">Imprimir Historial</button>
+        </div>
+
+        <div id="output" class="output-section"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
